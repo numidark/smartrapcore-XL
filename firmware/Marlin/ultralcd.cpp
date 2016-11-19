@@ -430,6 +430,7 @@ void lcd_preheat_pla0()
 {
     setTargetHotend0(plaPreheatHotendTemp);
     setTargetBed(plaPreheatHPBTemp);
+    fanSpeed = plaPreheatFanSpeed;
     lcd_return_to_status();
     setWatch(); // heater sanity check timer
 }
@@ -438,6 +439,7 @@ void lcd_preheat_abs0()
 {
     setTargetHotend0(absPreheatHotendTemp);
     setTargetBed(absPreheatHPBTemp);
+    fanSpeed = absPreheatFanSpeed;
     lcd_return_to_status();
     setWatch(); // heater sanity check timer
 }
@@ -447,6 +449,7 @@ void lcd_preheat_pla1()
 {
     setTargetHotend1(plaPreheatHotendTemp);
     setTargetBed(plaPreheatHPBTemp);
+    fanSpeed = plaPreheatFanSpeed;
     lcd_return_to_status();
     setWatch(); // heater sanity check timer
 }
@@ -455,6 +458,7 @@ void lcd_preheat_abs1()
 {
     setTargetHotend1(absPreheatHotendTemp);
     setTargetBed(absPreheatHPBTemp);
+    fanSpeed = absPreheatFanSpeed;
     lcd_return_to_status();
     setWatch(); // heater sanity check timer
 }
@@ -465,6 +469,7 @@ void lcd_preheat_pla2()
 {
     setTargetHotend2(plaPreheatHotendTemp);
     setTargetBed(plaPreheatHPBTemp);
+    fanSpeed = plaPreheatFanSpeed;
     lcd_return_to_status();
     setWatch(); // heater sanity check timer
 }
@@ -473,6 +478,7 @@ void lcd_preheat_abs2()
 {
     setTargetHotend2(absPreheatHotendTemp);
     setTargetBed(absPreheatHPBTemp);
+    fanSpeed = absPreheatFanSpeed;
     lcd_return_to_status();
     setWatch(); // heater sanity check timer
 }
@@ -485,6 +491,7 @@ void lcd_preheat_pla012()
     setTargetHotend1(plaPreheatHotendTemp);
     setTargetHotend2(plaPreheatHotendTemp);
     setTargetBed(plaPreheatHPBTemp);
+    fanSpeed = plaPreheatFanSpeed;
     lcd_return_to_status();
     setWatch(); // heater sanity check timer
 }
@@ -495,6 +502,7 @@ void lcd_preheat_abs012()
     setTargetHotend1(absPreheatHotendTemp);
     setTargetHotend2(absPreheatHotendTemp);
     setTargetBed(absPreheatHPBTemp);
+    fanSpeed = absPreheatFanSpeed;
     lcd_return_to_status();
     setWatch(); // heater sanity check timer
 }
@@ -503,6 +511,7 @@ void lcd_preheat_abs012()
 void lcd_preheat_pla_bedonly()
 {
     setTargetBed(plaPreheatHPBTemp);
+    fanSpeed = plaPreheatFanSpeed;
     lcd_return_to_status();
     setWatch(); // heater sanity check timer
 }
@@ -510,6 +519,7 @@ void lcd_preheat_pla_bedonly()
 void lcd_preheat_abs_bedonly()
 {
     setTargetBed(absPreheatHPBTemp);
+    fanSpeed = absPreheatFanSpeed;
     lcd_return_to_status();
     setWatch(); // heater sanity check timer
 }
